@@ -14,62 +14,188 @@ body{
 
 #poster{
     background-color: #1e293b;
-    width: 30%;
-    border-radius: 5px;   
+    width: 35%;
+    border-radius: 10px;   
+    margin-top: 10px;
+    padding: 40px 35px;
 }
 .poster__top{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    padding-bottom: 10px;
     gap: 15px;
-
 }
 .poster__top input{
     background-color: #1e293b;
     border: 1px solid #5a6069;
-    padding-top: 8px;
+    padding-top: 10px;
     padding-bottom: 8px;
-    padding-left: 5px;
-    width: 300px;
+    padding-left: 10px;
+    width: 70%;
     border-radius: 3px;
     color: #ebf2f8;
+    
 }
+
 .poster__top input:focus{
     outline: none;
 }
 .poster__top button{
     background-color: #ffb92a;
-    padding: 10px 30px ;
+    padding: 11px;
     border-radius: 5px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: bolder;
     border: none;
+    width: 25%;
 }
 
-#poster img{
-    width: 100px;
-}
 .poster__middle{
     display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 15px;
+    gap: 15px;
+
+}
+.poster__middle__right{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
 }
 .rating{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    gap: 8px;
+}
+.rating i{
+    color: #fab82a;
+    font-size: 12px;
+}
+.rating p{
+    color: #ebf2f8;
+    font-weight: 500;
+}
+.poster__middle__right h1{
+    font-size: 20px;
+    color: #f9fbfe;
+    letter-spacing: 3px;
+    text-align: center;
 }
 .poster__middle__right__m{
  display: flex;   
  justify-content: center;
  align-items: center;
- gap: 10px;
+ gap: 15px;
+ margin-top: 15px;
+}
+.poster__middle__right__m p{
+ font-size: 13px;
+ color: #9b9ba0;
+
 }
 .genree{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.genree p{
+    border: 1px solid #9b9ba0;
+    padding: 4px 15px;
+    border-radius: 5px;
+    color: #c2c2c8;
+    font-size: 12px;
+}
+
+.poster__body{
+    margin-top: 30px;
+}
+.poster__body h3{
+    color: #ebf2f8;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.poster__body p{
+    color: #9b9ba0;
+    font-size: 11px;
+    line-height: 20px;
+}
+.actors{
+margin-top: 20px;
+}
+#movie{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+@media  screen and (max-width:1415px){
+#poster{
+    width:40%
+}
+
+}
+@media screen and (max-width: 1150px){
+    #poster{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 1050px){
+    #poster{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1010px){
+    #poster{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 830px){
+    #poster{
+        width: 60%;
+    }
+    .poster__top{
+        flex-direction: column;
+    }
+    .poster__middle{
+        flex-wrap: wrap;
+    }
+}
+@media  screen and (max-width:622px){
+    .poster__top input{
+        width: 80%;
+    }
+    .poster__top button{
+        width: 30%;
+    }
+}
+
+@media  screen and (max-width:480px){
+    .poster__top input{
+        width: 90%;
+    }
+    .poster__top button{
+        width: 40%;
+
+    }
+}
+@media  screen and (max-width:450px){
+    #poster{
+        width: 70%;
+    }
+}
+@media  screen and (max-width:380px){
+    #poster{
+        width: 75%;
+    }
 }
